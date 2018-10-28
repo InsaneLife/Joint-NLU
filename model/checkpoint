@@ -1,6 +1,0 @@
-model_checkpoint_path: "_step_1802_epochs_14.ckpt"
-all_model_checkpoint_paths: "_step_1511_epochs_10.ckpt"
-all_model_checkpoint_paths: "_step_1591_epochs_11.ckpt"
-all_model_checkpoint_paths: "_step_1666_epochs_12.ckpt"
-all_model_checkpoint_paths: "_step_1736_epochs_13.ckpt"
-all_model_checkpoint_paths: "_step_1802_epochs_14.ckpt"
