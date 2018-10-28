@@ -14,7 +14,7 @@ model = gensim.models.KeyedVectors.load_word2vec_format(model_path, binary=True)
 # model.save_word2vec_format(data_root + 'GoogleNews-vectors-negative300.txt', binary=False)
 google_embedding_path = data_root + 'GoogleNews-vectors-negative300.txt'
 
-print(model['to'])
+# print(model['to'])
 
 def get_embedding_map(path):
     map = {}
