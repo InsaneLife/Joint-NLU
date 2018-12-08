@@ -30,7 +30,7 @@ parser.add_argument("--patience", type=int, default=10, help="Patience to wait b
 # learn rate param
 parser.add_argument("--learning_rate_decay", type=str, default='1', help="learning_rate_decay")
 parser.add_argument("--learning_rate", type=float, default=0.001, help="The initial learning rate.")
-parser.add_argument("--decay_steps", type=int, default=280, help="decay_steps.")
+parser.add_argument("--decay_steps", type=int, default=280*4, help="decay_steps.")
 parser.add_argument("--decay_rate", type=float, default=0.9, help="decay_rate.")
 
 # Model and Vocab
@@ -46,8 +46,8 @@ parser.add_argument("--valid_data_path", type=str, default='valid', help="Path t
 parser.add_argument("--input_file", type=str, default='seq.in', help="Input file name.")
 parser.add_argument("--slot_file", type=str, default='seq.out', help="Slot file name.")
 parser.add_argument("--intent_file", type=str, default='label', help="Intent file name.")
-parser.add_argument("--embedding_path", type=str, default='./vocab/google_in_vocab_embedding1.npy',
-                    help="embedding array's path.")
+parser.add_argument("--embedding_path", type=str, default='', help="embedding array's path.")
+# embedding_path : ./vocab/google_in_vocab_embedding.npy
 
 arg = parser.parse_args()
 # Print arguments
